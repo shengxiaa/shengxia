@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>主页</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+	<link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/rem.js"></script>
+	
+</head>
+<body>
+	 <header>
+      <div>
+		<img src="img/timg1.png" >
+        xxxx工作室
+        <span class="yykg iconfont icon-laba"></span>
+      </div>
+	  <audio src="audio/忏悔曲.mp3" ></audio>
+    </header>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+			<img src="img/timg%20(1).jpg" >
+		</div>
+        <div class="swiper-slide">
+			<img src="img/timg%20(4).jpg" >
+		</div>
+        <div class="swiper-slide">
+			<img src="img/timg%20(2).jpg" >
+		</div>
+        <div class="swiper-slide">
+			<img src="img/timg%20(3).jpg" >
+		</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+	<div class="main">
+		
+		<div class="main-input username">
+			<span class="main-font" >用户名</span>
+			<input id="username" type="text" name=""  value="" />
+		</div>
+	
+		<div class="main-input password">
+			<span class="main-font" >密码</span>
+			<input id="password" type="text" name=""  value="" />
+		</div>
+		
+		
+		<div class="main-input">
+			<button type="button">登录</button>
+			<button type="button">注册</button>
+			<button type="button">忘记密码</button>
+		</div>
+	</div>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
