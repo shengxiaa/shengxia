@@ -1,10 +1,11 @@
+
 $('.main input').blur(function () {
 			var a = null;
 			var b = $(this).val()
 			if($(this).attr('id') == 'username'){
 				a = /[a-zA-Z][0-9a-zA-Z]{8,}$/;
 				appendP(a,b,$(this),'用户名正确','用户名错误')
-			}if($(this).attr('id') == 'password') {
+			}if($(this).attr('id') == 'password'){
 				a = /(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,}$/;
 				appendP(a,b,$(this),'密码正确','密码错误')
 			}if($(this).attr('id') == 'email') {
@@ -40,3 +41,32 @@ $('#qrpassword').blur(function(){
 					$(this).parent().append('<p>确认密码错误</p>')
 						}
 		})
+		
+		
+if(window.localStorage.userArr){//判断是否存在
+			var array = JSON.parse(window.localStorage.userArr);
+				}else{
+			array = [];//创建一个新数组
+			}
+		
+		
+		
+		document.getElementById('regist').onclick = function(){
+		var username = document.getElementById('username').value;
+		var password = document.getElementById('password').value;
+		//遍历数组进行匹配
+		for(var i =0;i<array.length;i++){
+			//判断是否有相同账号
+			console.log(('username'))
+			if(username==array[i].username){
+				alert("该账号已存在");
+				return;
+			}
+		}
+		//创建对象
+		var obj = {password:password,score:0}
+		array.push(obj);
+		localStorage.setItem(username,JSON.stringify(array))
+		alert("用户创建成功");
+		location.href = "index.html";
+	}
