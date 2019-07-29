@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+	background: #fff;
+}
+
+header {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #eeeeee;
+    text-align: center;
+    position: relative;
+}
+
+header span {
+	position: absolute;
+	left: 1.25rem;
+}
+
+header div {
+    font-size: 1rem;
+}
+
+
+
+.fapai {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.fapai ul {
+    height: 380px;
+    overflow: hidden;
+}
+
+.tablet {
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.tablet span {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	background: blueviolet;
+	color: #fff;
+	line-height: 2.5rem;
+	margin-top: 1.25rem;
+}
+
+.fapaipic img {
+	/* display: inline-block; */
+	margin-top: 1.25rem;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.gamebtn {
+	margin-top: 1.25rem;
+}
+
+.gamebtn button{
+	padding: 0.625rem 0.9375rem;	
+}
+
+.hides,
+#hides {
+    display: none;
+}
+

@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+	background: #fff;
+}
+
+header {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #eeeeee;
+    text-align: center;
+    position: relative;
+}
+
+header span {
+	position: absolute;
+	left: 1.25rem;
+}
+
+header div {
+    font-size: 1rem;
+}
+
+.main {
+	font-size: 1.25rem;
+	text-align: center;
+	
+}
+
+.main-btn {
+	margin: 1.875rem auto;
+	width: 80%;
+	position: relative;
+}
+
+.main-btn button {
+	width: 20%;
+	padding: 0.625rem 1.25rem;
+}
+
+.main-people {
+	width: 70%;
+	margin-top: 0.625rem;
+	text-align: right;
+	position: relative;
+}
+
+.people{
+	padding-left: 6.25rem;
+}
+
+#next {
+	margin-top: 1.25rem;
+	padding: 0.625rem 2rem;
+}
+
+.main-people p {
+	position: absolute;
+	left: 9rem;
+	display: inline-block;
+}
+	

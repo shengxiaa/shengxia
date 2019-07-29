@@ -64,7 +64,7 @@ if(window.localStorage.userArr){//判断是否存在
 			}
 		}
 		//创建对象
-		var obj = {password:password,score:0}
+		var obj = {password:password}
 		array.push(obj);
 		localStorage.setItem(username,JSON.stringify(array))
 		alert("用户创建成功");
