@@ -1,4 +1,13 @@
 var swiper = new Swiper('.swiper-container', {
+	direction:'horizontal',
+
+	//播放速度
+
+	loop: true,
+
+	// 自动播放时间
+
+	autoplay:true,
 		          pagination: {
 		            el: '.swiper-pagination',
 		          },
@@ -39,15 +48,40 @@ if(window.localStorage.userArr){//判断是否存在
 
 	
 		$('#login').click( function(){
-			if($('#username').val() == localStorage.key(0) ){
-				$('#password').val() == localStorage.getItem("a1aaaaaaa").password
-				alert("登陆成功")
-				location.href = "qishiye.html";
+			// console.log(localStorage.key(1))
+			// if($('#username').val() == localStorage.key(1) ){
+			// 	
+			// 	console.log(localStorage.key(1))
+			// 	$('#password').val() == localStorage.getItem("a1aaaaaaa").password
+			// 	alert("登陆成功")
+			// 	location.href = "qishiye.html";
+			// }else {
+			// 	alert("登录失败")
+			// }
+			
+			 var message = localStorage.getItem("message");
+			var arr = message.split(',');
+			var name = arr[0];
+			var password = arr[1];
+			var _thisname = $('#username').val();
+			var _thispassword = $('#password').val();
+			if (name == _thisname && password == _thispassword) {
+			    alert('登录成功');
+				location.href = "home page.html";
+			    return true;
+				
 			}else {
-				alert("登录失败")
+				alert('密码错误')
 			}
+			// if (_thisname== '' || _thispassword == '') {
+			//     $('.tishi').addClass('shows');
+			//     $('.tishi3').addClass('shows');
+			//     setTimeout(function () {
+			//         $('.tishi3').removeClass('shows'); //找到对应的标签隐藏
+			//     }, 2000);
+			// }
+			// return false;
 	})
-	    console.log(localStorage.getItem("a1aaaaaaa").password)
 	// $('#login').click( function(){
 	// 	console.log($('#username').val())
 	// 	console.log(localStorage.getItem("a1111111"))

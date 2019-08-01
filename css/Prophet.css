@@ -1,0 +1,62 @@
+.pics {
+    overflow-y: scroll;
+    /* height: 300px; */
+    margin-top: 1.2rem;
+}
+
+.pics::-webkit-scrollbar {
+    display: none;
+}
+
+.pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ;
+    padding: 1.2rem;
+    padding-top: 0
+}
+
+
+
+.pic li {
+    margin-bottom: 1rem;
+    width: 6.2rem;
+    height: 10rem;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    position: relative;
+}
+
+.pic li img {
+    width: 6.3rem;
+    height: 10rem;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sure,
+.back {
+    display: inline-block;
+    background: #FF4500;
+    height: 2.2rem;
+    width: 5.4rem;
+    text-align: center;
+    line-height: 2.2rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.sure {
+    margin-right: 2rem;
+}
+
+.main .pics .pic li img:nth-child(3) {
+    position: absolute;
+    top: 15px;
+}

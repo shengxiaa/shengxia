@@ -20,7 +20,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     var num = 0;
 
-    var image = ['cp.jpg', 'cp-1.jpg', 'cp-2.jpg', 'cp-3.jpg', 'cp-4.jpg', 'lr.jpg', 'lr-1.jpg', 'lr-2.jpg', 'lr-3.jpg', 'nw.jpg', 'sw.jpg', 'yyj.jpg'];
+    var image = ['pm.jpg', 'pm -1.jpg', 'pm -2.jpg', 'pm -3.jpg', 'pm -4.jpg', 'lr.jpg', 'lr-1.jpg', 'lr-2.jpg', 'lr-3.jpg', 'nw.jpg', 'sw.jpg', 'yyj.jpg'];
 
     function getArrRandomly(arr) {
         var len = arr.length;

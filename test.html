@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>1</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+		<style type="text/css">
+			.pic {
+				width: 100%;
+				height: auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			.pic ul {
+				width: 100%;
+			}
+			
+			.pic ul li {
+				display: inline-block;
+				width: 29%;
+				height: 8.125rem;
+				margin: 0.625rem 0 0.625rem 0.625rem;
+				position: relative;
+			}
+			
+			.pic img {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+			}
+			
+		</style>
+	
+	</head>
+	<body>
+		<div class="pic">
+			<ul>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+				<li>
+					<img src="img/fpzm.jpg" >
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			
+			    var num = 0;
+			    var images = localStorage.getItem("images");
+			    var imgarr = images.split(',');
+			    console.log(imgarr);
+			    if (num < 12) {
+			        for (var i = 0; i < 12; i++) {
+			            image = "<img src='img/" + imgarr[i] + "'>";
+			            // console.log(image);
+			            $('.pic li').eq(i).append(image);
+			        }
+			    }
+			    // $(".killSelect li img").prev().hide();
+			    $(".pic li [src^='img/lr']").prev().hide();
+			    // var a = $(".killSelect li [src^='img/r2']");
+			    // if (a == false) {
+			    //     b = "<img src='/img/bg0.jpg'>";
+			    //     $('.killSelect li').append(b);
+			    // }
+			    // $(".killSelect li [src^='img/r2']");//取得狼人的身份
+				
+					// console.log(window.localStorage.imgaes)
+				// $() = JSON.stringify(storage);
+				// var obj = JSON.parse(windon.localStorage.image);
+				// for (var i=o;i<obj.length;i++) {
+				// 	obj[i] = JSON.parse(obj[i]);	
+				// }
+
+
+				$('.main .pics .pic li').click(function(){
+				
+       	 $('.main .pics .pic li').eq(index).append('<img class="judge" src="img/die.jpg" >');
+
+				})
+
+				
+        
+		</script>
+	</body>
+</html>

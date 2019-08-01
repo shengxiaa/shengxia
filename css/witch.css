@@ -1,0 +1,15 @@
+.witchchoose {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.witchchoose button {
+    display: inline-block;
+    background: rebeccapurple;
+    height: 2.2rem;
+    width: 5.4rem;
+    text-align: center;
+    line-height: 2.2rem;
+    border-radius: 5px;
+    color: white;
+}
