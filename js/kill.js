@@ -20,12 +20,6 @@ $(document).ready(function () {
     // $(".killSelect li img").prev().hide();  
     $(".main .pics .pic li [src^='img/lr']").prev().hide(); //非狼人 隐藏
 	
-    // var a = $(".killSelect li [src^='img/r2']");
-    // if (a == false) {
-    //     b = "<img src='/img/bg0.jpg'>";
-    //     $('.killSelect li').append(b);
-    // }
-    // $(".killSelect li [src^='img/r2']");//取得狼人的身份
 	
 });
 
@@ -55,10 +49,6 @@ $('.main .pics .pic li').click(function(){
 $(document).ready(function () {
     var arr = [];
     $('.sure').click(function () {
-        // alert(1) //选中之后的图标  <i class="iconfont icon-icon-test" style="font-size: 2.4rem;"></i>
-        // $('.back').css({ //返回默认禁用，如果点击了确定则启用
-        //     'pointer-events': 'auto'
-        // })
         var num = 0;
         var images = localStorage.getItem("images");
         var imgarr = images.split(',');
