@@ -73,14 +73,6 @@ if(window.localStorage.userArr){//判断是否存在
 			}else {
 				alert('密码错误')
 			}
-			// if (_thisname== '' || _thispassword == '') {
-			//     $('.tishi').addClass('shows');
-			//     $('.tishi3').addClass('shows');
-			//     setTimeout(function () {
-			//         $('.tishi3').removeClass('shows'); //找到对应的标签隐藏
-			//     }, 2000);
-			// }
-			// return false;
 	})
 	// $('#login').click( function(){
 	// 	console.log($('#username').val())

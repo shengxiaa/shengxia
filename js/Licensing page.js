@@ -1,7 +1,6 @@
 $(document).ready(function () {
     var n = 0;
     var lengths = $('.fapai ul li').length; //得知有几个li
-    // console.log(lengths);
     $('.next').click(function () {
         n += 1;
         $('.fapai ul li').eq(n).show().siblings('li').hide();
@@ -11,7 +10,6 @@ $(document).ready(function () {
         }
         $('.gamebtn button:first-child').text('显示身份');
         $('.fapaipic img:first-child').removeClass('hides');
-        // location.reload(a());
     });
 });
 
@@ -42,26 +40,14 @@ $(document).ready(function () {
  $('.gamebtn button').eq(0).on("click", function () { //生成唯一随机图
 
 
-        // console.log(getArrRandomly(image));
-        // console.log(image);随机以后的image
         localStorage.setItem("images", image);
 
-        // number = Math.floor(Math.random() * image.length);
         images = "<img src='img/" + image[num] + "'>";
-        // console.log(image[num]);
-
-        // console.log($('#a').children().length);
-        // $('.imgBox').eq(0).append(images);
         if (num < 12) {
             if ($('.fapaipic').eq(num).children().length <= 2) {
                 $('.fapaipic').eq(num).append(images);
             }
         }
-
-
-        // setTimeout(function () {
-        //     location.reload();
-        // }, 3000);
         num += 1;
     });
 
@@ -77,9 +63,6 @@ $(document).ready(function () {
             $('.gamebtn button:first-child').text('显示身份');
             return true;
         }
-        // setTimeout(function () {
-        //     location.reload();
-        // }, 3000);
     });
 
 

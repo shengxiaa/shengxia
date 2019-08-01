@@ -16,17 +16,7 @@ $(document).ready(function () {
         }
 		
     }
-    // console.log($('.main .pics .pic li'));
-    // $(".killSelect li img").prev().hide();  
     $(".main .pics .pic li [src^='img/yyj']").prev().hide(); //非狼人 隐藏
-	
-    // var a = $(".killSelect li [src^='img/r2']");
-    // if (a == false) {
-    //     b = "<img src='/img/bg0.jpg'>";
-    //     $('.killSelect li').append(b);
-    // }
-    // $(".killSelect li [src^='img/r2']");//取得狼人的身份
-	
 });
 
 
@@ -38,7 +28,6 @@ $(document).ready(function () { //选择查看谁
         var index = $(this).index(); //鼠标点击的li的下标值
         // $(this).eq(index).children().eq(0).addClass('hides');
         $('.main .pics .pic li').eq(index).children().eq(0).hide(); //鼠标选中哪个 显示哪个的身份
-        // console.log($('.main .pics .pic li').eq(index).children().eq(0))
         
         arr.push(index); //添加选中人的下标
 

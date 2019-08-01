@@ -11,16 +11,7 @@ $(document).ready(function () {
         }
 		
     }
-    // console.log($('.main .pics .pic li'));
-    // $(".killSelect li img").prev().hide();  
     $(".main .pics .pic li [src^='img/nw']").prev().hide(); //非狼人 隐藏
-	
-    // var a = $(".killSelect li [src^='img/r2']");
-    // if (a == false) {
-    //     b = "<img src='/img/bg0.jpg'>";
-    //     $('.killSelect li').append(b);
-    // }
-    // $(".killSelect li [src^='img/r2']");//取得狼人的身份
 	
 });
 

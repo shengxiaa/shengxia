@@ -16,8 +16,6 @@ $(document).ready(function () {
             $('.pic li').eq(i).append(image);
         }
     }
-    // console.log($('.main .pics .pic li'));
-    // $(".killSelect li img").prev().hide();  
     $(".main .pics .pic li [src^='img/lr']").prev().hide(); //非狼人 隐藏
 	
 	
